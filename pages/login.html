@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AuroraSphinx</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <button type="button" class="googlelogin"><img src="/images/googleicon.svg" alt="Google Icon" width="20px">Log in with Google</button>
+        <form action="/pages/dashboard.html" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Log In</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="#" class="sign-up">New User?</a>
+            <input type="checkbox" id="stay" name="logged" class="stay-logged-in">
+            <label for="stay"> Stay logged in</label>
+        </div>
+</body>
+<style>
+    .container {
+        width: 300px;
+        margin: 100px auto;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        background-color: rgb(238, 238, 238);
+        border-radius: 2px;
+
+        font-family: Arial, sans-serif;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 0px 1.5px 0.5px rgb(255, 255, 255);
+        color: rgb(7, 7, 7);
+    }
+    button {
+          border-radius: 2px;
+        border: navy solid 1px;
+        text-shadow: 0px 0.5px 1px rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        background: #1a24d9;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(0deg,rgb(206, 206, 206) 0%, rgb(255, 255, 255) 100%);
+        border-radius: 1px solid 1px;
+        border-color: #868686;
+        font-size: 10px;
+        font-weight: bold;
+        width: 50px;
+        height: 25px;
+        cursor: pointer;
+
+    }
+    body
+    {
+        background-color: #f3f3f3;
+    }
+    .googlelogin {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .forgot-password, .sign-up {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+        color: #0066cc;
+        text-decoration: none;
+    }
+    .forgot-password:hover, .sign-up:hover {
+        text-decoration: underline;
+    }
+    .stay-logged-in {
+        margin-top: 15px;
+        margin-right: 5px;
+        transform: scale(1.2);
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        color: gray;
+    }
+</style>
+</html>

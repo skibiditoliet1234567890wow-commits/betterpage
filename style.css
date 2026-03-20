@@ -9,29 +9,83 @@
   margin: 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
-header ul li {
+nav ul li {
   display: inline;
   margin-right: 20px; 
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
-  align-items: center;
+nav {
   display: flex;
-    border: 1px solid black;
+    border: 1px solid rgb(206, 206, 206);
+background: #a1a1a1;
+background: linear-gradient(0deg,rgb(216, 216, 216) 0%, rgba(235, 235, 235, 1) 100%);
 }
 footer {
   border: 1px solid black;
   margin-top: 20px;
+  box-shadow: 2px 2px 5px grey;
 }
 footer p {
   text-align: center;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+nav ul li a {
+  text-decoration: none;
+  text-shadow: 0px 1px 1px grey;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul button {
+  border-radius: 2px;
+  border: navy solid 1px;
+  text-shadow: 0px 0.5px 1px rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1a24d9;
+  color: white;
+  background: linear-gradient(0deg,rgb(56, 94, 218) 0%, rgb(75, 141, 228) 100%);
+  border-radius: 1px solid 1px;
+  border-color: #1b28a0;
+  font-size: 10px;
+  font-weight: bold;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
 footer .brazil-icon {
   display: block;
   margin: 0 auto;
 }
 .intro {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-container {
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-logo {
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 5px;
+}
+.content {
   font-family: Arial, Helvetica, sans-serif;
 }
